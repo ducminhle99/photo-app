@@ -1,13 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import MainPage from './pages/Main';
 import AddEditPage from './pages/AddEdit';
 import NotFound from '../../components/NotFound';
 
-Photo.propTypes = {
-
-}
+Photo.propTypes = {}
 
 function Photo(props) {
     const match = useRouteMatch();
