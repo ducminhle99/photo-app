@@ -5,7 +5,7 @@ import NotFound from "./components/NotFound";
 import AddEditPage from "./features/Photo/pages/AddEdit";
 
 
-// lazy load - code splitting
+// lazy load 
 const Photo = React.lazy(() => import('./features/Photo'));
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
           <Switch>
             <Redirect exact from="/" to="/photos" />
             <Route path="/photos/add" component={AddEditPage} />
-
             <Route path="/photos" component={Photo} />
             <Route component={NotFound} />
           </Switch>
