@@ -11,7 +11,7 @@ const Photo = React.lazy(() => import('./features/Photo'));
 function App() {
   return (
     <div className="photo-app">
-      <Suspense fallback={<div>loading...</div>}>
+      <Suspense fallback={<div></div>} >
         <BrowserRouter>
           <Header />
           <Switch>

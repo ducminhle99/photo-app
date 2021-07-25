@@ -9,7 +9,7 @@ Photo.propTypes = {}
 
 function Photo(props) {
     const match = useRouteMatch();
-    console.log({match});
+    // console.log({match});
 
     return (
         <Switch>
